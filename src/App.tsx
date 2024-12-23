@@ -6,13 +6,13 @@ import { toCurrency } from "./utils/helpers";
 export default function App() {
   return (
     <DashboardLayout>
-      <div className="bg-white rounded-[30px] pt-11 pb-6 flex items-center justify-between px-11 mb-8">
+      <div className="bg-white md:rounded-[30px] pt-11 pb-6 flex items-center justify-between px-5 md:px-12 mb-8">
         <h1 className="text-2xl font-semibold text-dark">
           Analytics Dashboard
         </h1>
       </div>
-      <div className="flex flex-col px-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-5 gap-y-4">
+      <div className="flex flex-col px-5 md:px-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-x-5 gap-y-4">
           <StatCard name="Total savings balance" value={toCurrency(194000)} />
           <StatCard name="Total customers" value={919} />
           <StatCard name="Total POS" value={0} />

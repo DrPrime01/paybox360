@@ -12,8 +12,8 @@ import TalentIcon from "@/components/vectors/TalentIcon";
 
 function DashboardLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="bg-secondary flex items-stretch h-screen w-screen p-7 relative">
-      <aside className="hidden md:flex flex-col gap-y-6 max-w-[252px] pt-[34px] pr-7 h-[calc(100vh-56px)]">
+    <div className="bg-secondary flex items-stretch h-screen w-screen md:p-7 relative">
+      <aside className="hidden lg:flex flex-col gap-y-6 max-w-[252px] pt-[34px] pr-7 h-[calc(100vh-56px)]">
         <div className="border-b-[0.4px] border-dashed border-deep-blue pb-[30px] flex flex-col">
           <h2 className="text-2xl font-bold text-white">Paybox360</h2>
           <p className="text-white text-xs">by LibertyPay</p>
@@ -90,7 +90,7 @@ function DashboardLayout({ children }: { children: React.ReactNode }) {
           </div>
         </div>
       </aside>
-      <main className="rounded-[30px] h-[calc(100vh-56px)] w-full overflow-y-auto flex flex-col bg-light-gray">
+      <main className="md:rounded-[30px] md:h-[calc(100vh-56px)] w-full overflow-y-auto flex flex-col bg-light-gray">
         {children}
       </main>
     </div>
