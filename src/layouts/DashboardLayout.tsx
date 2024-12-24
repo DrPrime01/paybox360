@@ -90,7 +90,7 @@ function DashboardLayout({ children }: { children: React.ReactNode }) {
           </div>
         </div>
       </aside>
-      <main className="md:rounded-[30px] md:h-[calc(100vh-56px)] w-full overflow-y-auto flex flex-col bg-light-gray">
+      <main className="md:rounded-[30px] md:h-[calc(100vh-56px)] w-full overflow-y-auto flex flex-col bg-light-gray pb-[100px]">
         {children}
       </main>
     </div>
